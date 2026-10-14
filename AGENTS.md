@@ -7,10 +7,10 @@ Project instructions for coding agents. Planning artifacts (glossary, ADRs, spec
 The `validator` and `tester` agents run these. Keep them accurate; leave a line empty if it does not apply.
 
 <!-- flow:commands -->
-lint:
-format:
-types:
-test:
+lint: ruff check .
+format: ruff format --check .
+types: mypy .
+test: pytest -q
 build:
 coverage_threshold: 85
 <!-- /flow:commands -->
