@@ -6,3 +6,8 @@ __pycache__/
 .env
 .coverage
 coverage.xml
+.vscode/
+data/processed/*.csv
+!data/processed/.gitkeep
+data/outputs/*.csv
+!data/outputs/.gitkeep
